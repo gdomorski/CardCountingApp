@@ -30,8 +30,16 @@ function cardCounter(){
     //show the image of the card you selected
     showImage(randomCard);
     //take it out of the deck so you don't get the same card twice in a 52 card deck
-    allCards.splice(rnd, 1)
+    allCards.splice(rnd, 1);
+    hideIntroBox();
 }
+
+function hideIntroBox(){
+    introBox.style.display = "none";
+    dealerButton.style.display = "block";
+
+}
+
 
 
 function showImage(randomCard) {
