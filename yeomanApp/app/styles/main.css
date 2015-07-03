@@ -18,8 +18,15 @@ body {
   text-align: center;
 }
 
+.inner-box {
+  min-height: 75px;
+  max-height: 75px;
+  border-style: solid;
+}
+
 .style-buttons {
   margin: 30px auto 0 auto;
+  height: 120px;
   width: 300px;
   font-size: 20px;
   line-height: 30px;
