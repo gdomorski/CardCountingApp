@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body>
+  <body bgcolor="#000000">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -30,9 +30,11 @@
       <a href="http://www.blackjackage.com/the-hi-lo-strategy.php" >Learn more about counting cards</a>
     </div>
 
-    <div id="countText">The count is 0</div>
-    <input id="dealerButton" type="button" onclick="cardCounter()" value = "Deal next card" style="display:none;"> </input>
-    
+    <div id="buttonstyles" class="style-buttons" style="display:none">
+      <div id="countText" style="display:none">The count is 0</div> <br>
+      <input id="dealerButton" type="button" onclick="cardCounter()" value="Deal next card" style="display:none;"> </input>
+      <input id="resetGame" type="button" onclick=history.go(0) value="Reset App" style="display:none;"> </input>
+    </div>    
 
 
 
