@@ -34,9 +34,9 @@ function cardCounter(){
             countText.textContent = 'The count is an amazing +'+ count + '. Bet BIG money';
         }
     }else{
-        countText.textContent = 'The count is '+ count +'. The table is going cold';
-        if(count < -4){
-            countText.textContent = 'The count is '+ count + '. Terrible odds! Bet table minimum or leave!';
+        countText.textContent = 'The count is '+ count +'. The table is going cold!';
+            if(count < -4){
+                countText.textContent = 'The count is '+ count + '. Terrible odds! Bet table minimum or leave!';
         }
     }
     //show the image of the card you selected
