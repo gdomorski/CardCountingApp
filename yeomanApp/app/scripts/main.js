@@ -26,10 +26,18 @@ function cardCounter(){
         }
     
     //change the count as text
-    if(count > 0){
-        countText.textContent = 'The count is +'+ count;
+    if(count === 0){
+        countText.textContent = 'The count is ' + count + '.'
+    } else if (count > 0){
+        countText.textContent = 'The count is +'+ count +'. The table is heating up!';
+        if(count > 4){
+            countText.textContent = 'The count is an amazing +'+ count + '. Bet BIG money';
+        }
     }else{
-        countText.textContent = 'The count is '+ count;
+        countText.textContent = 'The count is '+ count +'. The table is going cold';
+        if(count < -4){
+            countText.textContent = 'The count is '+ count + '. Terrible odds! Bet table minimum or leave!';
+        }
     }
     //show the image of the card you selected
     showImage(randomCard);
